@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Upload and Question Preference</h1>
+    <form id="resumeForm">
+      <!-- File Upload -->
+      <label for="resumeUpload">Upload Your Resume:</label>
+      <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx,.txt" required>
+
+      <!-- Question Type -->
+      <label for="questionType">Select Question Type:</label>
+      <select id="questionType" name="questionType" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="technical">Technical</option>
+        <option value="nonTechnical">Non-Technical</option>
+        <option value="nonTechnical">Both</option>
+      </select>
+
+      <!-- Company Name -->
+      <label for="companyName">Enter Company Name:</label>
+      <input type="text" id="companyName" name="companyName" placeholder="e.g., Google" required>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
